@@ -117,7 +117,7 @@ function Main() {
 console.log(rango)
   return (
     <>
-    <nav className="flex justify-between mr-48 ml-5">
+    <nav className="flex justify-between mr-48 ml-5 text-stone-100">
         <ul>
           <li onClick={()=>random()} className='inline-block mt-[2px] mr-[5px] font-bold cursor-pointer hover:text-green-500'>Aleatorio</li>
           <li onClick={()=>randomHumanos()} className='inline-block mt-[2px] mr-[5px] font-bold cursor-pointer hover:text-green-500'>Humanoides</li>
@@ -125,10 +125,10 @@ console.log(rango)
           <li onClick={()=>randomVivos()} className='inline-block mt-[2px] mr-[5px] font-bold cursor-pointer hover:text-green-500'>Personajes vivos</li>
           <li onClick={()=>randomNoVivos()} className='inline-block mt-[2px] mr-[5px] font-bold cursor-pointer hover:text-green-500'>Personajes muertos</li>
         </ul>
-        <input onChange={(e)=>filter(e.target.value)} placeholder='Buscar...' type="search" className='w-30 h-8 rounded-lg border-[1px] border-solid border-black pl-3'/>
+        <input onChange={(e)=>filter(e.target.value)} placeholder='Buscar...' type="search" className='text-black w-30 h-8 rounded-lg border-[1px] border-solid border-black pl-3'/>
       </nav>
     <div className="flex w-full h-[900px] px-[5px]">
-        <section className="border-[1px] border-solid border-black flex justify-evenly flex-wrap w-[100%]">
+        <section className="border-[3px] border-solid border-black flex justify-evenly flex-wrap w-[100%] items-center">
         {
           response ? 
           characters5.map((character)=>{
@@ -136,7 +136,7 @@ console.log(rango)
             <Article personaje={character}/>
             )
           })
-          : <div>Personaje no encontrado</div>
+          : <div id='warning' className='text-red-600 text-9xl item font-bold rounded-xl shadow-2xl bg p-10'>Personaje no encontrado</div>
         }
         </section>
         <Aside characters={charactersAside}/> 

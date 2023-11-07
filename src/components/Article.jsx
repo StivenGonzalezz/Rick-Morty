@@ -6,7 +6,7 @@ import { MdFaceUnlock, MdOutlineFaceRetouchingOff } from "react-icons/md";
 
 const Article = (props) => {
   return (
-    <article class="mb-[15px] w-[40%] h-[30%] flex border-[2px] border-solid border-black bg-gray-700 items-center">
+    <article class="mb-[15px] w-[40%] h-[30%] flex border-[4px] rounded-xl border-solid border-black bg-gray-700 items-center hover:scale-105 transition-all ease-in hover:bg-gray-500">
               <img className="w-[80%] h-[80%] border-[1px] border-solid border-white" src={props.personaje.image} alt="" />
               <div className="w-[80%] h-[80%]">
                 <hgroup>

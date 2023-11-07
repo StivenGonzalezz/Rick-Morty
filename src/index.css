@@ -8,9 +8,15 @@
   padding: 0;
 }
 
+#warning{
+  background-image: url("./assets/images/404.jpg");
+  background-size: cover;
+}
+
 body {
 
-
+  background-image: url("./assets/images/background.jpg");
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
